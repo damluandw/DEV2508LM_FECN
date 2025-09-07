@@ -1,0 +1,21 @@
+1. HTML (2-3 buổi)
+2. CSS (2-3 buổi)
+- cách sử dụng CSS
+- cách tương tác giữa HTML và CSS (bộ chọn)
+- thuộc tính CSS
+- mức độ ưu tiên khi tương tác giữa HTML và CSS (bộ chọn)
+- responsive
+3. Javascript (1-2 buổi)
+- ngôn ngữ lập trình kịch bản
+- khai báo biến, object, function, mảng,...
+- cấu trúc điều khiển/ rẽ nhánh
+- vòng lặp
+- hàm xử lý chuỗi và mảng
+4. DOM/Jquery (2 buổi)
+- giúp tương tác giữa ngôn ngữ Javascript và HTML/CSS
+5. Bootstrap (1 buổi)
+6. Photoshop (1 buổi)
+- cut ảnh, đo màu sắc, lấy font chữ,kích thước chữ, đo kích thước
+7. Thực hành (làm đồ án -)
+- lấy 1 bản thiết kế - làm 1 trang 
+- các trang còn lại

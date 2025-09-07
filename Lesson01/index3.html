@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body>
+        <form action method="post" enctype="multipart/form-data" id="form">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username"
+                    value="devmaster"
+                    size="30"
+                    placeholder="nhập tên đăng nhập">
+            </div>
+            <div>
+                <label for="password">password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div>
+                <label for="email">email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <!-- kiểu hidden -->
+            <input type="hidden" name="id" id="id" value="12">
+            <!-- Kiểu checkbox -->
+            <div>
+                <label for>Hobby:</label>
+                <input type="checkbox" name="hobby" id="football" checked>
+                <label for="football">Đá bóng</label>
+                <input type="checkbox" name="hobby" id="mussic">
+                <label for="mussic">Nghe nhạc</label>
+                <input type="checkbox" name="hobby" id="readbook">
+                <label for="readbook">Read book</label>
+            </div>
+            <!-- Kiểu radio -->
+            <div>
+                <label for>Giới tính:</label>
+                <input type="radio" name="gioitinh" id="nam" checked>
+                <label for="nam">Nam</label>
+                <input type="radio" name="gioitinh" id="nu">
+                <label for="nu">Nữ</label>
+                <input type="radio" name="gioitinh" id="khac">
+                <label for="khac">Khác</label>
+            </div>
+            <!-- Kiểu range -->
+            <div>
+                <label>Chỉ số IQ:</label>
+                <input type="range" name="IQ" id="IQ" min="50" max="120"
+                    value="100">
+            </div>
+            <!-- Kiểu thời gian -->
+            <div>
+                <input type="date" name="ngaysinh" id="ngaysinh">
+            </div>
+            <div>
+                <label for="noisinh">Nơi sinh:</label>
+                <select name="noisinh" id="noisinh">
+                    <option value="HN">Hà Nội</option>
+                    <option value="HP">Hải Phòng</option>
+                    <option value="QN">Quảng Ninh</option>
+                </select>
+            </div>
+            <div>
+                <label for="mota">Mô tả:</label>
+                <textarea name="mota" id="mota" cols="60" rows="5"></textarea>
+            </div>
+            <div>
+                <label for="avatar">Avatar</label>
+                <input type="file" name="avatar" id="avatar">
+            </div>
+            <!-- Kiểu button -->
+            <input type="button" name="dangky" id="dangky" value="đăng ký">
+            <!-- <input type="submit" name="dangky" id="dangky"> -->
+            <!-- <button>Đăng ký</button> -->
+             <!-- Kiểu reset -->
+              <input type="reset" name="reset" id="reset">
+        </form>
+    </body>
+</html>
