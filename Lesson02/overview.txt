@@ -1,0 +1,67 @@
+1. Giới thiệu HTML
+- theo trực quan:
+    + thẻ đơn: <tên_thẻ />
+    + thẻ kép: <tên_thẻ> ... </tên_thẻ>
+
+- theo tính chất:
+    + theo block-khối: thẻ chiếm 100% kích thước màn hình khi chưa có CSS; các thẻ sau sẽ
+                        xuống dòng tiếp theo
+    + theo inline: thẻ này chỉ chiếm kích thước theo giá trị của value và những thẻ ở sau 
+                    sẽ trên cùng 1 dòng với thẻ phía trước
+
+2. Một thẻ hay dùng
+- p : đoạn văn bản
+- a : thẻ siêu liên kết
+- ul li: thẻ danh sách
+- h1->h6 : thẻ tiêu đề
+- img : hiển thị hình ảnh
+- address : thẻ về địa chỉ
+- span: 
+
+
+3. Table
+- cú pháp 
+<table>
+    <thead> 
+        <tr>
+            <th>
+            </th>
+                ...
+            <th>
+            </th>
+        </tr>
+    </thead>
+     <tbody>
+         <tr>
+            <td>
+            </td>
+            ...
+            <td>
+            </td>
+        </tr>        
+        ...
+    </tbody>
+     <tfoot>
+        <tr>
+            <td>
+            </td>
+            ...
+            <td>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+- một số thuộc tính: border, cellspacing, cellpadding, align, colspan, rowspan
+
+4. Form-input
+- form: action, method, encyptype
+- input: 
+    + type: text, email, number,  password, hidden, radio, checkbox, date, file, range, button, submit,...
+    + name
+    + id
+    + size
+- select - option
+- textarea: 
+    + rows, cols 
+

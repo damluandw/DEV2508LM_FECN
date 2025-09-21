@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tương tác CSS với thẻ HTML</title>
+        <style>
+        /* systax: 
+            tag{
+                tên_thuộc_tính_CSS: giá_trị_thuộc_tính;
+            }
+        
+        */
+        /* tương tác thông qua tên thẻ */
+        /* systax:
+            tên_thẻ{
+                tên_thuộc_tính_CSS_1: giá_trị_thuộc_tính;
+                tên_thuộc_tính_CSS_2: giá_trị_thuộc_tính;
+                tên_thuộc_tính_CSS_3: giá_trị_thuộc_tính;
+            }
+        */
+        p{
+            color: red;
+            background-color: yellow;
+        }
+
+        p{
+            color: blue;
+        }
+
+        /* tương tác thông qua tên class của thẻ HTML */
+        /* systax:
+            .tên_class{
+                tên_thuộc_tính_CSS_1: giá_trị_thuộc_tính;
+                tên_thuộc_tính_CSS_2: giá_trị_thuộc_tính;
+                tên_thuộc_tính_CSS_3: giá_trị_thuộc_tính;
+            }
+        */
+        .cl-blue{
+            color: blue;
+        }
+        /* Thông qua tên id của thẻ HTML */
+         /* systax:
+            #tên_id{
+                tên_thuộc_tính_CSS_1: giá_trị_thuộc_tính;
+                tên_thuộc_tính_CSS_2: giá_trị_thuộc_tính;
+                tên_thuộc_tính_CSS_3: giá_trị_thuộc_tính;
+            }
+        */
+        #h3-green{
+            color: green;
+        }
+        /* h3{
+            color: blue !important;
+        } */
+
+        /* Thông qua thuộc tính của thẻ HTML */
+         /* systax:
+            [tên_thuộc_tính_của_thẻ_HTML]{
+                tên_thuộc_tính_CSS_1: giá_trị_thuộc_tính;
+                tên_thuộc_tính_CSS_2: giá_trị_thuộc_tính;
+                tên_thuộc_tính_CSS_3: giá_trị_thuộc_tính;
+            }
+        */
+        [cl-x]{
+            color: brown;
+        }
+        [type]{
+            border: 2px solid red;
+        }
+    </style>
+    </head>
+    <body>
+        <div>
+            <p>Tương tác thông qua tên thẻ HTML</p>
+            <p>Tương tác thông qua tên thẻ HTML</p>
+            <p>Tương tác thông qua tên thẻ HTML</p>
+            <p>Tương tác thông qua tên thẻ HTML</p>
+        </div>
+        <div>
+            <h3 class="cl-blue">Tương tác thông qua tên class của thẻ HTML</h3>
+
+            <p class="cl-blue">
+                Tương tác thông qua tên class của thẻ HTML
+            </p>
+
+        </div>
+
+        <div>
+            <h3 id="h3-green">Tương tác thông qua ID của thẻ HTML</h3>
+        </div>
+
+        <div>
+            <h4 cl-x="abc">Tương tác thông qua tên thuộc tính của thẻ HTML</h4>
+
+            <input type="text" name="username" id="">
+            <input type="text" name="username" id="">
+            <input type="text" name="username" id="">
+            <input type="password" name="password" id="">
+
+        </div>
+    </body>
+</html>

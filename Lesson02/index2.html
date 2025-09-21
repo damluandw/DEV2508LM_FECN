@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bố cục của 1 trang</title>
+        <style>
+            header,section,footer{
+                border: 1px solid ;
+                margin: 4px;
+            }
+            header ul{
+                display: flex;
+                list-style: none;
+                padding: 0;
+            }
+            header ul li{
+                padding: 8px;
+            }
+            footer>div{
+                display: flex;
+            }
+            #sanpham{
+                display: flex;
+            }
+            #sanpham>div{
+                border: 1px solid;
+                width: 33%;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Begin Header -->
+        <header>
+            <!-- Logo, thanh tìm kiếm, menu -->
+            <div>
+                <img src alt>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- End Header -->
+        <!-- Begin Nội dung -->
+        <section>
+            <article>
+                <p>Giới thiệu về Devmaster</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eius quasi omnis id iure sequi provident, veritatis
+                    perspiciatis dignissimos eligendi qui, ipsam aliquid
+                    doloribus, necessitatibus doloremque architecto similique
+                    aspernatur ad. Laudantium!
+                </p>
+            </article>
+        </section>
+        <section id="sanpham">
+            <div>
+                <h3>Sản phẩm</h3>
+                <p>Nội dung</p>
+            </div>
+            <div>
+                <h3>Sản phẩm</h3>
+                <p>Nội dung</p>
+            </div>
+            <div>
+                <h3>Sản phẩm</h3>
+                <p>Nội dung</p>
+            </div>
+        </section>
+        <!-- End Nội dung  -->
+        <!-- Begin Footer -->
+        <footer>
+            <!-- thông tin liên hệ, menu, đường dẫn MXH, map -->
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                    </ul>
+                </nav>
+                <address>
+                    Địa chỉ: 25 Vũ Ngọc Phan
+                </address>
+            </div>
+            <p>Bản quyền....</p>
+        </footer>
+        <!-- End Footer -->
+    </body>
+</html>

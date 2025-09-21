@@ -1,0 +1,4 @@
+1. Lưu ý
+- CSS viết sau sẽ được ưu tiên sử dụng (cùng thẻ tag)
+- !important> tên_id > tên_class> tên_thuộc_tính > tên_thẻ
+- trỏ càng gần đến thẻ hoặc trỏ càng kỹ đến thẻ thì càng được ưu tiên sử dụng
