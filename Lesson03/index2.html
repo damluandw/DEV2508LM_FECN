@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bộ chọn CSS</title>
+        <style>
+        /* Bộ chọn * <=> html */
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+        /* Bộ chọn tag*/
+        /* các cách tương tác giữa HTML và CSS */
+
+        /* Tag01 tag02: chọn tất cả tag02 nằm bên trong tag01 */
+        .box-1 p{
+            color: red;
+        }
+        /* Tag01>tag02: chọn tất cả tag02 nằm bên trong tag01 
+        và tag02 là thẻ con (trực tiếp) của tag01 */
+        .box-2>p{
+            color: red;
+            background-color: yellow;
+        }
+        /* Tag01+tag02: chọn tất cả thẻ tag02 nằm sau liền kề  với thẻ tag01  */
+        .box-3 h2+p{
+            color: red;
+            background-color: yellow;
+        }
+        /* Tag01~tag02: chọn tất cả thẻ tag02 nằm sau với thẻ tag01  */
+        .box-4 h2~p{
+            color: red;
+            background-color: yellow;
+        }
+
+        /* Tag01, tag02: chọn  tất cả thẻ tag01 và tag02*/
+        .box-5 p,
+        .box-5 h2
+        {
+            color: blue;
+        }
+        /* tag01tag02: chọn tới thẻ có cả tag01 và tag02 */
+        /* tên_thẻ#tên_id.tên_class.tên_class */
+        .box-6  h2.cl-red{
+            color: red;
+        }
+
+
+        /* Demo mức độ ưu tiên */
+         /* #title-box-6{
+            color: yellow;
+        } */
+
+        /* .box-7 h2{
+            color: cadetblue;
+        } */
+
+        h2{
+            color: blue ;
+            background-color: blueviolet;
+        }
+        
+        /* .cl-red{
+            color: red;
+            
+        } */
+
+        .box-7{
+            color:chartreuse;
+        }
+
+
+    </style>
+    </head>
+    <body>
+        <section class="box-1">
+            <div>
+                <h2>Tag01 tag02</h2>
+                <p>Tag01 tag02</p>
+            </div>
+            <p>Tag01 tag02</p>
+        </section>
+
+        <section class="box-2">
+            <div>
+                <h2>Tag01>tag02</h2>
+                <p>Tag01>tag02</p>
+            </div>
+            <p>Tag01>tag02</p>
+        </section>
+        <section class="box-3">
+            <p>Tag01+tag02</p>
+            <h2>Tag01+tag02</h2>
+            <p>Tag01+tag02</p>
+            <p>Tag01+tag02</p>
+            <p>Tag01+tag02</p>
+            <p>Tag01+tag02</p>
+            <p>Tag01+tag02</p>
+        </section>
+        <section class="box-4">
+            <p>Tag01~tag02</p>
+            <h2>Tag01~tag02</h2>
+            <p>Tag01~tag02</p>
+            <p>Tag01~tag02</p>
+            <p>Tag01~tag02</p>
+            <p>Tag01~tag02</p>
+            <p>Tag01~tag02</p>
+        </section>
+        <section class="box-5">
+            <div>
+                <h2>Tag01,tag02</h2>
+                <p>Tag01,tag02</p>
+            </div>
+            <p>Tag01,tag02</p>
+
+        </section>
+
+        <section class="box-6">
+            <h2 class="cl-red">tag01tag02</h2>
+            <p class="cl-red">
+                tag01tag02
+            </p>
+            <h2 id="title-box-6" class="cl-red">tag01tag02</h2>
+            <h2>tag01tag02</h2>
+        </section>
+
+
+        <section class="box-7">
+            <h2 class="cl-red">box-7</h2>
+            <p class="cl-red">
+                box-7
+            </p>
+            <p>
+                box-7
+            </p>
+            <h2>box-7</h2>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+Mức độ ưu tiên trong CSS
+- CSS viết sau sẽ được ưu tiên sử dụng (trong cùng 1 tên thẻ tag)
+- !important -> tên_id->tên_class ->tên_thuộc_tính-> thẻ_tag
+- Bộ chọn càng kỹ hoặc càng gần đến thẻ càng được ưu tiên sử dụng

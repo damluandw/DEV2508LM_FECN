@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        .menu-2{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 200px;
+            border: 1px solid #000;
+            border-top: none;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+       
+        nav a{
+            text-decoration: none;
+            color: #000;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu-1{
+            display: flex;
+        }
+        nav li{
+            background-color: #ccc;
+            padding: 0.5rem;
+            position: relative;
+        }
+        .menu-1>li~li{
+            border-left: 2px solid red;
+        }
+
+        nav ul>li:hover{
+            background-color: green;
+        }
+         nav ul>li:hover>a{
+            color: #fff;
+        }
+        nav ul>li:hover .menu-2{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu-1">
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Khóa học</a>
+                <ul class="menu-2">
+                    <li><a href="#">Khóa học Web với MySQL</a></li>
+                    <li><a href="#">Khóa học web netcore</a></li>
+                    <li><a href="#">Khóa học web Java springboot</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Dịch vụ</a>
+                 <ul class="menu-2">
+                    <li><a href="#">Dịch vụ 1</a></li>
+                    <li><a href="#">Dịch vụ 2</a></li>
+                    <li><a href="#">Dịch vụ 3</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#">Hỗ trợ</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
